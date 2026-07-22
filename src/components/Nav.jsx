@@ -7,6 +7,7 @@ export default function Nav({ page, go }) {
       {NAV_PAGES.map((p) => (
         <button
           key={p.key}
+          data-nav={p.key}
           className={'nav-btn' + (page === p.key ? ' active' : '')}
           onClick={() => go(p.key)}
           aria-current={page === p.key ? 'page' : undefined}

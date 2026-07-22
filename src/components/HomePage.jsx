@@ -118,12 +118,12 @@ export default function HomePage({ go }) {
 
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'relative', zIndex: 2 }}>
           <div style={{
-            background: '#fff', borderRadius: 22, padding: '10px 20px', boxShadow: 'var(--shadow)',
-            fontFamily: 'var(--hand)', fontWeight: 700, color: 'var(--rose)', fontSize: 24,
+            background: 'var(--bubble)', borderRadius: 22, padding: '10px 20px', boxShadow: 'var(--shadow)',
+            fontFamily: 'var(--hand)', fontWeight: 700, color: 'var(--bubble-ink)', fontSize: 24,
             position: 'relative', marginBottom: 6, animation: 'pop .5s .3s both',
           }}>
             {PROFILE.greeting}
-            <span style={{ position: 'absolute', bottom: -9, left: 40, width: 18, height: 18, background: '#fff', transform: 'rotate(45deg)', borderRadius: 3 }} />
+            <span style={{ position: 'absolute', bottom: -9, left: 40, width: 18, height: 18, background: 'var(--bubble)', transform: 'rotate(45deg)', borderRadius: 3 }} />
           </div>
           <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', width: '100%', transform: `translate(${par.x * 16}px, ${par.y * 16}px)`, transition: 'transform .15s ease-out' }}>
             <div className="glow" />

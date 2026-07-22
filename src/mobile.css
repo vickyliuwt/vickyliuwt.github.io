@@ -10,11 +10,14 @@ img, video, svg, iframe { max-width: 100%; }
 .nav-btn .em { flex: none; }
 .nav-btn span.em {            /* emoji: star doc palette */
     display: inline-flex; align-items: center; justify-content: center;
-    width: 22px; height: 22px; font-size: 18px; line-height: 1;
+    width: 24px; height: 22px; font-size: 18px; line-height: 1;
 }
-.nav-btn img.em {             /* image icons */
-    width: 22px; height: 22px; object-fit: contain;
-}
+.nav-btn img.em { width: 22px; height: 22px; object-fit: contain; }
+/* equalize visible size (source art has different padding + shape) */
+.nav-btn[data-nav="home"] img.em     { width: 26px; height: 26px; }
+.nav-btn[data-nav="projects"] img.em { width: 24px; height: 24px; }
+.nav-btn[data-nav="about"] img.em    { width: 22px; height: 22px; }
+.nav-search img.em                   { width: 23px; height: 23px; }
 
 /* photo */
 .about-hero {

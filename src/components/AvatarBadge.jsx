@@ -39,7 +39,7 @@ export default function AvatarBadge() {
             <button ref={badgeRef} className={"avatar-badge" + (wig ? " wig" : "")} onClick={onClick}
                     aria-expanded={open} aria-label="Say hello">
         <span className="avatar-wrap">
-          <img className="avatar-dog" src={BASE + 'dog/dog-heart.webp'} alt="" />
+          <img className="avatar-dog" src={BASE + 'dog/dog-love.webp'} alt="" />
         </span>
                 <span className="avatar-info">
           <span className="avatar-name">{PROFILE.name}</span>

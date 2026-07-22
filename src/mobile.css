@@ -7,17 +7,19 @@ img, video, svg, iframe { max-width: 100%; }
 * { min-width: 0; }
 
 /* nav icons */
-.nav-btn .em { flex: none; }
-.nav-btn span.em {            /* emoji: star doc palette */
+.nav-btn .em {
+    flex: none;
     display: inline-flex; align-items: center; justify-content: center;
-    width: 24px; height: 22px; font-size: 18px; line-height: 1;
+    width: 26px; height: 26px;      /* uniform box -> buttons + hover pills align */
+    font-size: 18px; line-height: 1;
+    overflow: visible;
 }
-.nav-btn img.em { width: 22px; height: 22px; object-fit: contain; }
-/* equalize visible size (source art has different padding + shape) */
-.nav-btn[data-nav="home"] img.em     { width: 26px; height: 26px; }
-.nav-btn[data-nav="projects"] img.em { width: 24px; height: 24px; }
-.nav-btn[data-nav="about"] img.em    { width: 22px; height: 22px; }
-.nav-search img.em                   { width: 23px; height: 23px; }
+.nav-btn img.em { object-fit: contain; }
+/* normalize visible art (transform keeps the box, so alignment holds) */
+.nav-btn[data-nav="home"] img.em     { transform: scale(1.13); }
+.nav-btn[data-nav="projects"] img.em { transform: scale(1.02); }
+.nav-btn[data-nav="about"] img.em    { transform: scale(0.92); }
+.nav-search img.em                   { transform: scale(1.0); }
 
 /* photo */
 .about-hero {

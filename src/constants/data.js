@@ -4,10 +4,10 @@ import { PROFILE } from './profile'
 /* nav */
 export const NAV_PAGES = [
     { key: 'home',       label: 'Home',        emoji: '🏠', icon: 'dog-love.webp' },
-    { key: 'experience', label: 'Experience',  emoji: '⭐' },
+    { key: 'experience', label: 'Experiences',  emoji: '⭐' },
     { key: 'projects',   label: 'Projects',    emoji: '💻', icon: 'bingo-wink.png' },
     { key: 'resume',     label: 'Resume',      emoji: '📄' },
-    { key: 'artwork',    label: 'Artwork',     emoji: '🎨' },
+    { key: 'artwork',    label: 'Artworks',     emoji: '🎨' },
     { key: 'about',      label: 'About',       emoji: '🐶', icon: 'avatar1.png' },
 ]
 

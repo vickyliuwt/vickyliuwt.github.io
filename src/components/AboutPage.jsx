@@ -84,7 +84,7 @@ export default function AboutPage() {
           <h3 style={{ fontSize: 26 }}>Say hello 🐾</h3>
           <p style={{ margin: '8px 0 20px' }}>{PROFILE.tagline}</p>
           <div style={{ display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a className="btn btn-pink" href={`mailto:${PROFILE.email}`}>Email 💌</a>
+            <a className="btn btn-pink" href={`mailto:${PROFILE.email}`}>Email </a>
             <button className="btn btn-cream" onClick={downloadVCard} title="Save my contact card">Save contact 📇</button>
             <a className="btn btn-cream" href={PROFILE.github} target="_blank" rel="noopener noreferrer">GitHub</a>
             {PROFILE.hasLinkedIn && (

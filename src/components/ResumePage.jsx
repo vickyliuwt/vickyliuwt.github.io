@@ -18,11 +18,18 @@ export default function ResumePage() {
             ? <a className="btn btn-pink" href={resumeUrl} target="_blank" rel="noopener noreferrer">Download PDF ⬇️</a>
             : <span className="pill c-sun">Add <code>PROFILE.resume</code> in profile.js to enable PDF download</span>}
           <button className="btn btn-cream" onClick={() => window.print()}>Print 🖨️</button>
-          <button className="btn btn-cream" onClick={downloadVCard} title="Save my contact card">Save contact 📇</button>
-          <a className="btn btn-cream" href={PROFILE.github} target="_blank" rel="noopener noreferrer">GitHub 🐙</a>
-          {PROFILE.hasLinkedIn && (
-            <a className="btn btn-cream" href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn 💼</a>
-          )}
+            <button className="btn btn-cream" onClick={downloadVCard} title="Save my contact card">
+                Save contact <img src={BASE + 'dog/view-icon.png'} alt="" style={{ width: 18, height: 18, verticalAlign: '-3px' }} />
+            </button>
+            <a className="btn btn-cream" href={PROFILE.github} target="_blank" rel="noopener noreferrer">
+                GitHub <img src={BASE + 'dog/github.svg'} alt="" style={{ width: 18, height: 18, verticalAlign: '-3px' }} />
+            </a>
+            {PROFILE.hasLinkedIn && (
+                <a className="btn btn-cream" href={PROFILE.linkedin} target="_blank" rel="noopener noreferrer">
+                    LinkedIn <img src={BASE + 'dog/linkedin.png'} alt="" style={{ width: 18, height: 18, verticalAlign: '-3px' }} />
+                </a>
+            )}
+
         </div>
 
         {resumeUrl && (

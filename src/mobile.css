@@ -7,19 +7,20 @@ img, video, svg, iframe { max-width: 100%; }
 * { min-width: 0; }
 
 /* nav icons */
+.nav-btn { justify-content: center; }   /* center icon in the pink pill */
 .nav-btn .em {
     flex: none;
     display: inline-flex; align-items: center; justify-content: center;
     width: 26px; height: 26px;      /* uniform box -> buttons + hover pills align */
-    font-size: 18px; line-height: 1;
+    font-size: 15px; line-height: 1;   /* emoji smaller */
     overflow: visible;
 }
 .nav-btn img.em { object-fit: contain; }
-/* normalize visible art (transform keeps the box, so alignment holds) */
-.nav-btn[data-nav="home"] img.em     { transform: scale(1.13); }
-.nav-btn[data-nav="projects"] img.em { transform: scale(1.02); }
-.nav-btn[data-nav="about"] img.em    { transform: scale(0.92); }
-.nav-search img.em                   { transform: scale(1.0); }
+/* images larger than emoji (transform keeps the box, so alignment holds) */
+.nav-btn[data-nav="home"] img.em     { transform: scale(1.30); }
+.nav-btn[data-nav="projects"] img.em { transform: scale(1.17); }
+.nav-btn[data-nav="about"] img.em    { transform: scale(1.06); }
+.nav-search img.em                   { transform: scale(1.15); }
 
 /* photo */
 .about-hero {

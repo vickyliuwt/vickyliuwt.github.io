@@ -150,15 +150,18 @@ img, video, svg, iframe { max-width: 100%; }
     .avatar-badge { background: rgba(255,255,255,0.95); }
     .site-footer { background: rgba(255,252,242,0.75); }
 
-    /* drop the marquee's gradient mask (extra compositing pass) */
-    .marquee { -webkit-mask: none !important; mask: none !important; }
+    /* pause the marquee: static, wrapped, single set of pills (no infinite scroll) */
+    .marquee { -webkit-mask: none !important; mask: none !important; overflow: visible; contain: none; }
+    .marquee-track { animation: none !important; display: flex; flex-wrap: wrap; justify-content: center; white-space: normal; }
+    .marquee-item.dup { display: none !important; }
 
     /* stop infinite heading shimmer + glow pulse (stay static, still pretty) */
     .shimmer-name { animation: none !important; }
     .glow { animation: none !important; }
 
     /* decorative loops: keep visible but static (no endless compositing) */
-    .floaty, .sparkle, .paw-divider span { animation: none !important; }
+    .floaty, .sparkle, .paw-divider span,
+    .otw .dotlive, .tl-dot.current::after { animation: none !important; }
 }
 
 /* night: near-solid surfaces once blur is off */

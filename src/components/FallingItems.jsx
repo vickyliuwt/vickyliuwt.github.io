@@ -1,8 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 
 const BASE = import.meta.env.BASE_URL
-const POOL = [ 'food3.webp', 'food4.webp', 'food5.webp', 'dog-pixel.webp', 'bingo-wink.png']
-const MAX = 3
+const POOL = ['food3.webp', 'food4.webp', 'food5.webp', 'dog-pixel.webp', 'bingo-wink.png']
 
 export default function FallingItems() {
     const [items, setItems] = useState([])
@@ -10,9 +9,13 @@ export default function FallingItems() {
 
     useEffect(() => {
         const mm = window.matchMedia
-        if (mm && (mm('(prefers-reduced-motion: reduce)').matches
-            || mm('(hover: none) and (pointer: coarse)').matches
-            || mm('(max-width: 768px)').matches)) return
+        // off entirely for reduced-motion
+        if (mm && mm('(prefers-reduced-motion: reduce)').matches) return
+        // fewer + slower on phones (touch or narrow) for perf
+        const light = !!mm && (mm('(hover: none) and (pointer: coarse)').matches || mm('(max-width: 768px)').matches)
+        const MAX = light ? 1 : 3
+        const EVERY = light ? 5000 : 1500
+
         const spawn = setInterval(() => {
             setItems((prev) => {
                 if (prev.length >= MAX) return prev
@@ -29,7 +32,7 @@ export default function FallingItems() {
                 setTimeout(() => setItems((p) => p.filter((x) => x.id !== id)), dur + 200)
                 return [...prev, item]
             })
-        }, 1500)
+        }, EVERY)
         return () => clearInterval(spawn)
     }, [])
 

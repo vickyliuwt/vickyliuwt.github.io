@@ -129,3 +129,46 @@ img, video, svg, iframe { max-width: 100%; }
     /* no stick */
     .card, .proj-card, .polaroid { transition: box-shadow .2s ease; }
 }
+
+/* perf */
+/* touch devices + narrow screens: kill the continuous GPU work that makes phones hot/janky */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+    /* full-screen animated gradient + fixed attachment = constant repaint + scroll jank */
+    body { animation: none !important; background-attachment: scroll; background-size: 100% 100%; }
+
+    /* blur(300px) multiply blobs = the #1 heat source */
+    .blob { display: none !important; }
+
+    /* backdrop blur is very expensive per element; drop it, use near-solid backgrounds */
+    .nav, .card, .fab, .avatar-badge, .site-footer, .ach-panel, .chat-window, .cmdk,
+    .proj-live, .cmdk-backdrop, .proj-backdrop, .art-backdrop, .chat-input, .clock-pill,
+    .help-backdrop, .help-card {
+        backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+    }
+    .card { background: rgba(255,255,255,0.9); }
+    .fab { background: rgba(255,255,255,0.95); }
+    .avatar-badge { background: rgba(255,255,255,0.95); }
+    .site-footer { background: rgba(255,252,242,0.75); }
+
+    /* drop the marquee's gradient mask (extra compositing pass) */
+    .marquee { -webkit-mask: none !important; mask: none !important; }
+
+    /* stop infinite heading shimmer + glow pulse (stay static, still pretty) */
+    .shimmer-name { animation: none !important; }
+    .glow { animation: none !important; }
+
+    /* decorative loops: keep visible but static (no endless compositing) */
+    .floaty, .sparkle, .paw-divider span { animation: none !important; }
+}
+
+/* night: near-solid surfaces once blur is off */
+@media (hover: none) and (pointer: coarse), (max-width: 768px) {
+    [data-theme="night"] .nav { background: rgba(38,28,45,0.97); }
+    [data-theme="night"] .card,
+    [data-theme="night"] .chat-window,
+    [data-theme="night"] .cmdk { background: rgba(46,34,53,0.92); }
+    [data-theme="night"] .fab { background: rgba(52,40,60,0.95); }
+    [data-theme="night"] .avatar-badge { background: rgba(52,40,60,0.95); }
+    [data-theme="night"] .ach-panel { background: rgba(38,28,45,0.99); }
+    [data-theme="night"] .site-footer { background: rgba(30,22,35,0.6); }
+}

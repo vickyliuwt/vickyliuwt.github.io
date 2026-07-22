@@ -7,8 +7,14 @@ img, video, svg, iframe { max-width: 100%; }
 * { min-width: 0; }
 
 /* nav icons */
-.nav-btn .em { font-size: 20px; line-height: 1; flex: none; }
-.nav-btn img.em { width: 20px; height: 20px; }
+.nav-btn .em { flex: none; }
+.nav-btn span.em {            /* emoji: star doc palette */
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 22px; height: 22px; font-size: 18px; line-height: 1;
+}
+.nav-btn img.em {             /* image icons */
+    width: 22px; height: 22px; object-fit: contain;
+}
 
 /* photo */
 .about-hero {

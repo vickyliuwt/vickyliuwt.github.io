@@ -768,6 +768,7 @@ kbd { font-family: var(--display); font-size: 11px; font-weight: 700; padding: 2
 .btn-ghost { background: transparent; color: var(--rose); box-shadow: none; border: 1.5px solid rgba(214,51,132,0.3); }
 .btn-ghost:hover { background: rgba(214,51,132,0.06); }
 [data-theme="night"] .btn-cream { background: #33263a; color: var(--cocoa); border-color: rgba(255,255,255,0.14); }
+[data-theme="night"] .treat-btn { background: var(--pink-ink); color: #fff; }
 
 .section-sub a, .ghcal-note a, .repo-desc a { text-underline-offset: 3px; }
 

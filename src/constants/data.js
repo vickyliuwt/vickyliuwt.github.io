@@ -98,7 +98,7 @@ export const PROJECTS = [
         highlights: [
             'TF-IDF + Logistic Regression with handcrafted features — 81.67% accuracy (best)',
             'Compared Word2Vec vs GloVe embeddings for semantic similarity',
-            'Built a Siamese LSTM in PyTorch capturing word order',
+            'Built a LSTM in PyTorch capturing word order',
             'Shared preprocessing pipeline with unit tests and an interactive demo',
         ],
     },
@@ -106,7 +106,7 @@ export const PROJECTS = [
         title: 'Kambaz LMS', emoji: '📚', year: '2025', color: 'peach',
         metric: 'live demo',
         tags: ['Next.js', 'React', 'TypeScript', 'Redux', 'Node.js', 'Express', 'MongoDB'],
-        blurb: 'A full-stack Canvas-style learning-management system with role-based access for faculty and students.',
+        blurb: 'A full-stack web dev Canvas-style learning-management system with role-based access for faculty and students.',
         keywords: 'full stack fullstack web development web application web app frontend front end backend back end mern mern stack rest restful rest api api crud http endpoints web services authentication authorization role based access control rbac access control routing protected routes login session state management redux redux toolkit react hooks spa single page application server side rendering ssr next.js react typescript node node.js express express.js mongodb mongodb atlas nosql database bootstrap react-bootstrap responsive design responsive ui learning management system lms education edtech canvas deployment vercel production git version control',
         link: 'https://kambaz-next-js-vicky-a6.vercel.app/Account/Signin',
         highlights: [
@@ -120,7 +120,7 @@ export const PROJECTS = [
         title: 'Memer', emoji: '😹', year: '2025', color: 'sky',
         metric: 'native iOS · Firebase',
         tags: ['Swift', 'UIKit', 'Firebase', 'Firestore', 'MVC'],
-        blurb: 'A native iOS meme generator and social app — pick a template or photo, drop on draggable text, then share to friends or a live trending feed.',
+        blurb: 'A full stack native iOS meme generator and social app — pick a template or photo, drop on draggable text, then share to friends or a live trending feed.',
         keywords: 'ios ios development mobile mobile development mobile app native app native ios apple iphone app development swift uikit xcode mvc model view controller firebase firebase auth authentication firestore cloud firestore firebase storage real time realtime real-time database snapshot listeners cloud baas backend as a service social app social media social network feed trending chat messaging friend requests image processing image editing canvas draggable gestures pinch to zoom camera photo library sensors image rendering uigraphicsimagerenderer meme generator meme sessionmanager caching',
         link: 'https://github.com/vickyliuwt/Memer',
         highlights: [
@@ -316,13 +316,13 @@ export const EDUCATION = [
         school: 'Northeastern University', degree: 'M.S. in Computer Science',
         period: 'Sep 2024 – May 2027', location: 'Boston, MA', emoji: '🎓', color: 'sky',
         points: [
-            'Coursework: Software Development, Algorithms, Database Systems, Web Technologies, Machine Learning, Scalable Distributed Systems ',
+            'Coursework: Software Development, Database Systems, Web Technologies, Machine Learning, Data Structures and Algorithms, Object Oriented Design, Building Scalable Distributed Systems, Mobile Application Development, Advanced Software Development, Computer Systems Engineering, Cloud Computing ',
         ],
     },
     {
         school: 'Savannah College of Art and Design', degree: 'B.F.A. in Animation',
         period: 'Jun 2023', location: 'Atlanta, GA', emoji: '🎨', color: 'pink',
-        points: ['Coursework: Character Animation, Tech Animation, Programming, Life Drawing, Collaborative Projects'],
+        points: ['Coursework: Computer Graphic, Human Computer Interaction, Tech Animation, Programming, interactive design and game development, Collaborative Projects'],
     },
 ]
 

@@ -80,7 +80,7 @@ export const PROJECTS = [
         tags: ['Python', 'Raw Sockets', 'AES-GCM', 'HMAC'],
         blurb: 'A secure, reliable file-transfer protocol built on raw UDP sockets from scratch.',
         keywords: 'networking network programming computer networks socket programming sockets raw sockets udp tcp ip transport layer transport protocol protocol design custom protocol packet datagram header checksum sequence number acknowledgment ack retransmission timeout go-back-n sliding window reliability reliable delivery packet loss flow control cybersecurity security cryptography encryption decryption authenticated encryption aead aes aes-256 gcm symmetric encryption key exchange handshake psk pre-shared key hkdf key derivation hmac message authentication sha-256 sha256 md5 hashing hash verification integrity data integrity replay attack replay protection systems programming low level multithreading threads concurrency concurrent aws ec2 cloud distributed systems secure communication infosec',
-        link: 'https://github.com/vickyliu01/Secure_Reliable_File_Transfer',
+        link: 'https://github.com/vickyliuwt/Secure_Reliable_File_Transfer',
         highlights: [
             'Constructed IP & UDP headers manually with SOCK_RAW sockets',
             'Reliability via checksums, sequence/ack numbers and timeout retransmission',
@@ -94,7 +94,7 @@ export const PROJECTS = [
         tags: ['Python', 'scikit-learn', 'PyTorch', 'NLP'],
         blurb: 'Detecting duplicate questions across 404K Quora pairs with three ML approaches.',
         keywords: 'machine learning ml deep learning artificial intelligence ai natural language processing nlp text classification semantic similarity sentence similarity duplicate detection paraphrase detection question pairs data science data mining feature engineering feature extraction model training benchmarking classification classifier supervised learning scikit-learn sklearn pytorch nltk gensim tf-idf tfidf logistic regression word2vec glove word embeddings embeddings siamese network siamese lstm lstm rnn recurrent neural network neural network accuracy auc roc recall precision evaluation metrics preprocessing pipeline python dataset large dataset',
-        link: 'https://github.com/vickyliu01/NLP-QuoraQuestionPairs',
+        link: 'https://github.com/vickyliuwt/Duplicate_Question_Detection',
         highlights: [
             'TF-IDF + Logistic Regression with handcrafted features — 81.67% accuracy (best)',
             'Compared Word2Vec vs GloVe embeddings for semantic similarity',
@@ -122,7 +122,7 @@ export const PROJECTS = [
         tags: ['Swift', 'UIKit', 'Firebase', 'Firestore', 'MVC'],
         blurb: 'A native iOS meme generator and social app — pick a template or photo, drop on draggable text, then share to friends or a live trending feed.',
         keywords: 'ios ios development mobile mobile development mobile app native app native ios apple iphone app development swift uikit xcode mvc model view controller firebase firebase auth authentication firestore cloud firestore firebase storage real time realtime real-time database snapshot listeners cloud baas backend as a service social app social media social network feed trending chat messaging friend requests image processing image editing canvas draggable gestures pinch to zoom camera photo library sensors image rendering uigraphicsimagerenderer meme generator meme sessionmanager caching',
-        link: 'https://github.com/lwt339/Meme-Generator',
+        link: 'https://github.com/vickyliuwt/Memer',
         highlights: [
             'Built in Swift/UIKit on a clean MVC architecture with hand-coded views (no storyboards)',
             'Meme editor with draggable, pinch-to-resize text overlays flattened via UIGraphicsImageRenderer',
@@ -136,7 +136,7 @@ export const PROJECTS = [
         tags: ['Java', 'Swing', 'MVC', 'JSON', 'JUnit'],
         blurb: 'A text-and-graphics adventure game engine with an asynchronous, event-driven controller and three swappable interfaces.',
         keywords: 'java object oriented object-oriented programming oop ood design patterns software design software architecture architecture interface abstraction encapsulation mvc model view controller event driven event-driven asynchronous async callback observer pattern command pattern listener gui graphical user interface desktop app desktop application java swing swing awt ui game game engine game development gamedev text adventure interactive fiction batch mode cli command line command-line json serialization save load persistence state management junit unit testing testing test driven tdd exception handling error handling',
-        link: '',
+        link: 'https://github.com/vickyliuwt/Adventure_Game_Engine',
         highlights: [
             'Designed on a clean MVC split — an IGameModel core, an event-driven AsyncController, and views behind one IUserInterface',
             'Hand-built the full Java Swing GUI (room rendering, navigation, inventory, menus) without UI-designer tools',
